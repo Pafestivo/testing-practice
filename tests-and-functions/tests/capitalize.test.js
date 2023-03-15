@@ -1,4 +1,15 @@
+const capitalize = require('../functions/capitalize')
 
-test('Capitalize first letter of string', () => {
-  expect(capitalize('hello world').toBe('Hello world'))
+describe('Capitalize', () => {
+  test('First letter of string', () => {
+    expect(capitalize('hello world')).toBe('Hello world')
+  })
+
+  test('Is undefined', () => {
+    expect(capitalize()).toBe("")
+  })
+
+  test('Is number', () => {
+    expect(capitalize(123)).toBe(123)
+  })
 })
