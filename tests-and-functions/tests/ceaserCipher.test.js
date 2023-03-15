@@ -1,6 +1,6 @@
 
 describe('Caesar Cipher', () => {
   test('works with short string', () => {
-    expect(caesarCipher('abcd')).toBe('bcde')
+    expect(caesarCipher('abcd', 1)).toBe('bcde')
   })
 })
